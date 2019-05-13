@@ -138,6 +138,7 @@ extension AppDelegate: NSUserNotificationCenterDelegate {
 
 extension String {
     func notify(){
+        print(self)
         let notification = NSUserNotification()
         notification.identifier = "podinstall-\(Date())"
         notification.informativeText = self
